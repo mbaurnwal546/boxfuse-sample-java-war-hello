@@ -9,7 +9,7 @@ node
 
  stage ('Application deployment')
   {
-   sh 'cp /var/lib/jenkins/workspace/target/hello-1.0.war /home/mukesh/apache-tomcat/webapps'
+   sh 'cp /var/lib/jenkins/workspace/Boxfuse/target/*.war /usr/share/tomcat/webapps'
   }
 
 }
