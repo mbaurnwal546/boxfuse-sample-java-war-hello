@@ -1,15 +1,15 @@
 node
 {
 
-stage ('checkout')
-{
- git 'https://github.com/mbaurnwal546/boxfuse-sample-java-war-hello.git'
- sh "mvn package"
-}
+  stage ('checkout')
+   {
+    git 'https://github.com/mbaurnwal546/boxfuse-sample-java-war-hello.git'
+    sh "mvn package"
+   }
 
-stage ('Application deployment')
-{
-sh 'cp /var/lib/jenkins/workspace/target/hello-1.0.war /home/mukesh/apache-tomcat/webapps'
-}
+ stage ('Application deployment')
+  {
+   sh 'cp /var/lib/jenkins/workspace/target/hello-1.0.war /home/mukesh/apache-tomcat/webapps'
+  }
 
 }
